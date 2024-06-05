@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="p-0 m-0 box-border font-sans bg-blue-200">
+        <div class="flex items-center justify-around">
+          <img src="assets/undraw_forms_re_pkrt.svg" alt="" srcset="" class="w-[300px]">
+          <div class="w-[500px] mt-4 bg-white border border-blue-300 shadow-md rounded-md">
+            <div class="w-full bg-blue-400 p-4">
+             <h1 class="text-xl text-center font-semibold text-gray-900">Registration Form</h1>
+            </div>
+            <div class="p-6 flex flex-col gap-6">
+             <div class="flex flex-col relative">
+                 <label for="username" class="mb-1 text-sm">*Username:</label>
+                 <input type="text" name="username" id="userName" placeholder="Enter your Fullname" class="w-full mb-1 outline-none border py-2 px-2 rounded-md border-gray-300 text-sm">
+                 <span id="usernameMessage" class="text-red-600 font-normal text-sm absolute -bottom-4"></span>
+             </div>
+             <div class="flex flex-col relative">
+                 <label for="email" class="mb-1 text-sm">*Email:</label>
+                 <input type="text" name="email" id="Email" placeholder="Enter your Email" class="w-full mb-1 outline-none border py-2 px-2 rounded-md border-gray-300 text-sm">
+                 <span id="emailMessage" class="text-red-600 font-normal text-sm  absolute -bottom-4"></span>
+             </div>
+             <div class="flex flex-col relative">
+                 <label for="phoneno" class="mb-1 text-sm">*Phone Number:</label>
+                 <input type="text" name="phoneno" id="phoneNo" placeholder="Enter your Phone Number" class="w-full mb-1 outline-none border py-2 px-2 rounded-md border-gray-300 text-sm">
+                 <span id="phonenoMessage" class="text-red-600 font-normal text-sm absolute -bottom-4"></span>
+             </div>
+             <div class="flex flex-col relative">
+                 <label for="password" class="mb-1 text-sm">*Password:</label>
+                 <input type="password" name="password" id="passWord" placeholder="Enter your Password" class="w-full mb-1 outline-none border py-2 px-2 rounded-md border-gray-300 text-sm">
+                 <span id="passwordMessage" class="text-red-600 font-normal text-sm absolute -bottom-4"></span>
+             </div>
+             <div class="flex flex-col relative">
+                 <label for="confirmpassword" class="mb-1 text-sm">*Confirm Password:</label>
+                 <input type="password" name="confirmpass" id="confirmPassword" placeholder="Enter your Confirm Password" class="w-full mb-1 outline-none border py-2 px-2 rounded-md border-gray-300 text-sm">
+                 <span id="conpasswordMessage" class="text-red-600 font-normal text-sm absolute -bottom-4"></span>
+             </div>
+             <div>
+                 <button type="button" class="text-cnter w-full mt-4 border rounded-lg bg-blue-500 py-1 text-gray-900 font-semibold text-lg" onclick="validateInput()">Submit</button>
+             </div>
+            </div>
+      </div>
+    </div>
+         
+<script src="app.js"></script>
+</body>
+</html>
